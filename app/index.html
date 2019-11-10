@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>hw4</title>
+</head>
+<body>
+<main>
+    <header>
+        <section class="header-top">
+            <div data-go-home class="logo">
+                <img src="assets/img/logo.svg" alt="shoppe">
+            </div>
+            <div class="input-search">
+                <input type="text" class="input-text input-search__text" placeholder="Search for Products">
+                <button class="btn btn_green input-search__btn">Search</button>
+            </div>
+            <div class="custom-panel flex">
+                <button data-login class="custom-panel__item btn btn_white">Log in</button>
+                <div class="custom-panel__item relative">
+                    <button class="btn btn_white">Sign up</button>
+                </div>
+                <svg class="custom-panel__item icon">
+                    <use xlink:href="assets/img/icons.svg?#heart"></use>
+                </svg>
+                <svg class="custom-panel__item icon">
+                    <use xlink:href="assets/img/icons.svg?#cart"></use>
+                </svg>
+                <div class="custom-panel__item">
+                    <img class="profile-image" src="assets/img/user-10.jpg" alt="profile-image">
+                    <svg class="icon icon_polygon">
+                        <use xlink:href="assets/img/icons.svg?#polygon"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <nav class="header-bottom">
+            <ul class="header-bottom__list">
+                <li data-home-decor-li class="header-bottom__item"><a href="#">Home Decor</a></li>
+                <li class="header-bottom__item"><a href="#">Furniture</a></li>
+                <li class="header-bottom__item"><a href="#">Lighting</a></li>
+                <li class="header-bottom__item"><a href="#">Home Accent</a></li>
+                <li class="header-bottom__item"><a href="#">Rugs</a></li>
+                <li class="header-bottom__item"><a href="#">Outdoors</a></li>
+                <li class="header-bottom__item"><a href="#">Holidays</a></li>
+                <li class="header-bottom__item"><a href="#">Gifts</a></li>
+                <li class="header-bottom__item"><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section data-li-inf class="li-inf hidden">
+        <div data-home-decor-item class="li-inf__item li-inf__item_home-decor">
+            <div class="li-inf__top">
+                <h2 class="li-inf__title">Home decor</h2>
+                <span class="li-inf__description">Create & live your unique style</span>
+                <span class="li-inf__count">25478 items</span>
+            </div>
+            <ul class="li-inf__bottom">
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pressure Cookers</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Kitchen Tools</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Beds</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pressure Cookers</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Kitchen Tools</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Beds</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pressure Cookers</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Kitchen Tools</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Beds</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pressure Cookers</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Kitchen Tools</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Beds</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pressure Cookers</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Kitchen Tools</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Beds</a></li>
+                <li data-go-to-category class="li-inf__category"><a href="#">Pots & Pans</a></li>
+            </ul>
+        </div>
+    </section>
+    <div data-bread-crumbs class="bread-crumbs ">
+        <div data-go-home class="bread-crumbs__item"><a href="#">Home</a></div>
+        <svg data-clothing-bread class="icon icon_polygon bread-crumbs__icon_polygon">
+            <use xlink:href="assets/img/icons.svg?#polygon"></use>
+        </svg>
+        <div data-clothing-bread class="bread-crumbs__item">Clothing</div>
+    </div>
+    <section class="content">
+        <section data-home-page class="home-page hidden">
+            <div class="content-top">
+                <article class="content-top__item">
+                    <img class="home-page__img home-page__img_top" src="assets/img/layer1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="content-top__item">
+                    <img class="home-page__img home-page__img_top" src="assets/img/layer2.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="content-top__item">
+                    <img class="home-page__img home-page__img_top" src="assets/img/layer3.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+            </div>
+            <div class="content-center">
+                <div class="content-center__left">
+                    <article class="content-center__item content-center__item_full-div">
+                        <img class="home-page__img " src="assets/img/main.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main3.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main4.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main5.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main6.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="content-center__right">
+                    <article class="content-center__item">
+                        <img class="home-page__img" src="assets/img/layer1.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/layer2.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main5.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item">
+                        <img class="home-page__img " src="assets/img/main6.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                    <article class="content-center__item content-center__item_full-div">
+                        <img class="home-page__img " src="assets/img/main2.jpg" alt="">
+                        <div class="category-product__inf">
+                            <span class="category-product__supplier block">Supplier’s Name Here</span>
+                            <a href="#" class="category-product__name block">Product Name Here</a>
+                            <span class="category-product__price block">$29,354.75</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <article class="content-bottom__item">
+                    <img class="home-page__img " src="assets/img/layer1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="content-bottom__item">
+                    <img class="home-page__img " src="assets/img/bot1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="content-bottom__item">
+                    <img class="home-page__img " src="assets/img/bot2.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="content-bottom__item">
+                    <img class="home-page__img " src="assets/img/bot5.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section data-home-decor-section class="home-decor">
+            <h1 class="category-title">Clothing</h1>
+            <section class="category-products">
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image2.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image3.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image3.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image2.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image3.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image1.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image2.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+                <article class="category-product">
+                    <img class="category-product__img" src="assets/img/image3.jpg" alt="">
+                    <div class="category-product__inf">
+                        <span class="category-product__supplier block">Supplier’s Name Here</span>
+                        <a href="#" class="category-product__name block">Product Name Here</a>
+                        <span class="category-product__price block">$29,354.75</span>
+                    </div>
+                </article>
+            </section>
+            <div class="view-more">
+                <button class="btn btn_white-green">View More Items</button>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h1>How We Help</h1>
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Get to Know Us</h1>
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Join the Community</h1>
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Lorem ipsum.</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Retailers</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Interiors Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-column follow-us">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#ff"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">facebook</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#tt"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Pinterest</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#pp"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Twitter</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#inst"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer__border"></div>
+            <address class="contacts">
+                <span><a href="#">© 2016 Uimint.com</a></span>
+                <span><a href="">Terms & Conditions</a></span>
+                <span><a href="">Privacy</a></span>
+            </address>
+        </div>
+    </footer>
+</main>
+<section data-background class="window-background hidden"></section>
+<section data-modal class="modal hidden">
+    <div class="modal__content">
+        <svg data-modal-close class="icon icon_close-modal">
+            <use xlink:href="assets/img/icons.svg?#reset"></use>
+        </svg>
+        <section class="modal__wrapper modal__wrapper_first">
+            <img src="assets/img/logo.svg" alt="shoppe">
+            <form>
+                <div class="wrapper-inf__inp">
+                    <input class="input-text payment-inf_field" id="name" type="text"
+                           placeholder="Username / Email Address">
+                </div>
+                <div class="wrapper-inf__inp">
+                    <input class="input-text payment-inf_field" id="name" type="text"
+                           placeholder="Password">
+                </div>
+                <div class="wrapper-inf__inp wrapper-inf__inp_checkbox text-left">
+                    <input id="checkbox-3" type="checkbox" class="input-checkbox" checked>
+                    <label for="checkbox-3">
+                        <svg class="icon icon_check">
+                            <use xlink:href="assets/img/icons.svg?#check"></use>
+                        </svg>
+                        Create an Account?
+                    </label>
+                    <span class="right"><a href="#">Forgot Password?</a></span>
+                </div>
+                <div class="wrapper-inf__inp wrapper-inf__inp_btn">
+                    <button class="btn btn_green btn_login">Log in</button>
+                    <button class="btn btn_white btn_login">Log in as a Guest</button>
+                </div>
+            </form>
+        </section>
+        <div class="modal__border modal__border_first">
+            <div class="border-el"></div>
+            <div>or</div>
+            <div class="border-el"></div>
+        </div>
+
+        <section class="modal__wrapper sign-in-with">
+            Sign in with
+            <section class="soc-ad">
+                <div class="soc-ad__item soc-ad__item_fb">
+                    <svg class="icon icon_social-big">
+                        <use xlink:href="assets/img/icons.svg?#ff-big"></use>
+                    </svg>
+                </div>
+                <div class="soc-ad__item soc-ad__item_gg">
+                    <svg class="icon icon_social-big icon_gg-big">
+                        <use xlink:href="assets/img/icons.svg?#gg-big"></use>
+                    </svg>
+                </div>
+                <div class="soc-ad__item soc-ad__item_pp ">
+                    <svg class="icon icon_social-big icon_pp-big">
+                        <use xlink:href="assets/img/icons.svg?#pp-big"></use>
+                    </svg>
+                </div>
+            </section>
+        </section>
+        <div class="modal__border modal__border_last"></div>
+        <section class="modal__wrapper modal__wrapper_register">
+            <a href="#">Not have an Account?</a>
+            <button class="btn btn_white btn_register">Register</button>
+        </section>
+    </div>
+</section>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>

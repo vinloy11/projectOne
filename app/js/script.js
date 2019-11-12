@@ -303,3 +303,7 @@ function createRandomElement() {
   let newAricle = document.createElement("article");
   newAricle.classList.add();
 }
+
+(function () {
+
+}());

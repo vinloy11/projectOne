@@ -398,6 +398,57 @@ let menuItems = [
         "Beds",
         "Pots & Pans",
         "Kitchen Tools",
+        "Pressure Cookers",
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Pressure Cookers"
+    ],
+    [
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools"
+
+    ],
+    [
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Pressure Cookers"
+    ],
+    [
+        "Kitchen Tools",
+        "Pressure Cookers",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
+        "Beds",
+        "Pots & Pans",
+        "Kitchen Tools",
         "Pressure Cookers"
     ],
     [
@@ -417,18 +468,11 @@ let menuItems = [
         "Pots & Pans",
         "Kitchen Tools",
         "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Kitchen Tools",
+        "Pots & Pans","Kitchen Tools",
         "Pressure Cookers",
         "Beds",
         "Pots & Pans",
         "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
         "Kitchen Tools",
         "Pressure Cookers"
     ],
@@ -440,24 +484,11 @@ let menuItems = [
         "Pressure Cookers",
         "Beds",
         "Pots & Pans",
-        "Kitchen Tools"
-    ],
-    [
-        "Kitchen Tools",
+        "Kitchen Tools","Kitchen Tools",
         "Pressure Cookers",
         "Beds",
         "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
+        "Kitchen Tools","Kitchen Tools",
         "Pressure Cookers",
         "Beds",
         "Pots & Pans",
@@ -509,11 +540,10 @@ categories.addEventListener("mouseover", function (e) {
 
 function mouseOver(e) {
     let dd = e.target;
-    let ed = e.currentTarget;
     let element = dd.closest("[data-category]");
     if (element !== null) {
         setTimeout(function () {
-            if (element.getAttribute('data-category') < 7) {
+            if (element.getAttribute('data-category') < 6) {
                 menu.setAttribute('style', `left : ${getXCoordinates(element)}px`);
             } else {
                 menu.setAttribute('style', `left : ${getXCoordinates(element) - 590}px`);
@@ -527,7 +557,7 @@ function mouseOver(e) {
 function pushElements(id) {
     let ul = document.querySelector(".li-inf__bottom");
     ul.innerHTML = "";
-    createMenuList(menuItems[id], ul)
+    createMenuList(menuItems[id])
 }
 
 document.addEventListener("mouseout", e => {
@@ -560,13 +590,9 @@ function closeMenu() {
     ul.innerHTML = "";
 }
 
-function createMenuList(array, element) {
+function createMenuList(array) {
 
  array.forEach(function (text) {
-    // let li = document.createElement("li");
-    // // let text = document.createT
-    // li.innerHTML = `<li data-go-to-category class="li-inf__category"><a href="#">${item}</a></li>`;
-    // element.appendChild(li);
    let templateLi = document.querySelector('#li-item');
    let li = templateLi.content.querySelector('.li-inf__category');
    li.textContent = text;

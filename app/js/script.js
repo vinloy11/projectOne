@@ -534,9 +534,7 @@ let toggleMenu = function (element) {
 let menu = document.querySelector("[data-li-inf]");
 
 let categories = document.querySelector(".header-bottom__list");
-categories.addEventListener("mouseover", function (e) {
-    mouseOver(e)
-});
+categories.addEventListener("mouseover", mouseOver);
 
 function mouseOver(e) {
     let dd = e.target;
@@ -560,9 +558,7 @@ function pushElements(id) {
     createMenuList(menuItems[id])
 }
 
-document.addEventListener("mouseout", e => {
-    mouseOut(e)
-});
+document.addEventListener("mouseout", mouseOut);
 
 function mouseOut(e) {
   let target = e.target;

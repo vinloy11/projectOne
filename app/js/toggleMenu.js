@@ -1,145 +1,146 @@
-
-export function toggleMenu() {
+import {generateRandomElements} from './randomElements.js'
+import {getData} from './getData.js'
+export function toggleMenu(menuItems) {
     
     
-let menuItems = [
-    [
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools"
+// let menuItems = [
+//     [
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers"
+//     ],
+//     [
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools"
   
-    ],
-    [
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools"
-    ],
-    [
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans","Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools","Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools","Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools"
-    ],
-    [
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools"
-    ],
-    [
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools",
-        "Pressure Cookers",
-        "Beds",
-        "Pots & Pans",
-        "Kitchen Tools"
-    ]
-  ];
+//     ],
+//     [
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers"
+//     ],
+//     [
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers"
+//     ],
+//     [
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools"
+//     ],
+//     [
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans","Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Kitchen Tools",
+//         "Pressure Cookers"
+//     ],
+//     [
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools","Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools","Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools"
+//     ],
+//     [
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers"
+//     ],
+//     [
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools"
+//     ],
+//     [
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools",
+//         "Pressure Cookers",
+//         "Beds",
+//         "Pots & Pans",
+//         "Kitchen Tools"
+//     ]
+//   ];
   
   let toggleMenu = function (element) {
     element.getAttribute("data-category");
@@ -153,6 +154,7 @@ let menuItems = [
   function mouseOver(e) {
     let dd = e.target;
     let element = dd.closest("[data-category]");
+    
     if (element !== null) {
         setTimeout(function () {
             if (element.getAttribute('data-category') < 6) {
@@ -194,6 +196,16 @@ let menuItems = [
   
   function openMEnu() {
     menu.classList.remove("hidden");
+    menu.querySelectorAll('li').forEach(function(item) {
+      item.addEventListener('click', function() {
+       document.querySelector('.content-top').innerHTML ="";
+       getData('http://localhost:3000/data/products.json', 'GET', function(data) {
+     // console.log('getData result = ' + data)
+     generateRandomElements(data)
+     
+ });
+     })
+    })
   }
   
   function closeMenu() {
@@ -203,11 +215,12 @@ let menuItems = [
   }
   
   function createMenuList(array) {
-  
   array.forEach(function (text) {
    let templateLi = document.querySelector('#li-item');
    let li = templateLi.content.querySelector('.li-inf__category');
-   li.textContent = text;
+   let a = templateLi.content.querySelector('a')
+   a.textContent = text.name;
+   a.setAttribute('href', text.link)
    let clone = document.importNode(templateLi.content, true);
    menu.querySelector('ul').appendChild(clone)
   });

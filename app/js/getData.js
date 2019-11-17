@@ -7,6 +7,6 @@ export function getData(url, method, callback) {
             data = JSON.parse(request.responseText)
             callback(data)
         }
-    })
+    });
     request.send()
 }

@@ -1,0 +1,345 @@
+[{
+  "category" : "pots",
+  "products" : [
+    {
+      "src": "assets/img/main3.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    },
+    {
+      "src": "assets/img/layer3.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    },
+    {
+      "src": "assets/img/main.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    },
+    {
+      "src": "assets/img/main4.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    },
+    {
+      "src": "assets/img/main5.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    },
+    {
+      "src": "assets/img/main1.jpg",
+      "name": "Рандомный pots",
+      "supplier": "Supplier’s Name Here",
+      "price": "$29,354.75"
+    }
+  ]
+},
+  {
+    "category" : "kitchen",
+    "products" : [
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      }
+    ]
+  },
+  {
+    "category" : "beds",
+    "products" : [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      }
+    ]
+  },
+  {
+    "category" : "pans",
+    "products" : [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      }
+    ]
+  },
+  {
+    "category" : "pressure",
+    "products" : [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      }
+    ]
+  },
+  {
+    "category" : "cookers",
+    "products" : [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "$29,354.75"
+      }
+    ]
+  }
+]
+
+

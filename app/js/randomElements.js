@@ -28,7 +28,7 @@ export function generateRandomElements(arrayProducts) {
         createArticle(location, element) {
             // if (this.locationMain) {
                 // if (location[0].classList.contains("content-top")) {
-            console.log(this.locationMain)
+            // console.log(this.locationMain)
                     let article = document.createElement("article");
                     article.className = "category-product";
                     article.innerHTML = `

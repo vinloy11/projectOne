@@ -3,6 +3,7 @@ import {generateRandomElements} from './randomElements.js'
 import {toggleMenu} from './toggleMenu.js';
 import {getData} from './getData.js'
 import {goToCategory} from "./goToCategory.js";
+import {Cart} from "./cart.js"
 
 dich();
 
@@ -22,6 +23,17 @@ if (startString !== -1) {
         generateRandomElements(data)
     });
 }
+
+
+
+let value;
+
+
+
+window.cartInstance = new Cart(0)
+
+cartInstance.addItem({price: 4400})
+cartInstance.addItem({price: 200})
 
 
 // setTimeout(function() {

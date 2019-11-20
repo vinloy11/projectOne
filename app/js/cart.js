@@ -1,7 +1,7 @@
 export class Cart {
     constructor(value) {
         this.value = value;
-        this
+        this.arrayProducts = [];
     }
     
     addItem(item) {
@@ -9,6 +9,8 @@ export class Cart {
         this.value += parseInt(Number(item.price));
         console.log(this.value);
         this.updateCart(this.value)
+        this.arrayProducts.push(item)
+        // console.log(this.arrayProducts)
     }
 
     updateCart(value) {
@@ -19,5 +21,9 @@ export class Cart {
         document.querySelector('.cart-wrapper').innerHTML = '';
         document.querySelector('.cart-wrapper').appendChild(clone)
     }
+
+
+
+
 
 }

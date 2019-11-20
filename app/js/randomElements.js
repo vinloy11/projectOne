@@ -39,7 +39,7 @@ export function generateRandomElements(arrayProducts) {
                     <div class="category-product__inf">
                         <span class="category-product__supplier block">${element.supplier}</span>
                         <a href="#" class="category-product__name block">${element.name}</a>
-                        <span class="category-product__price block">${element.price}</span>
+                        <span class="category-product__price block">$${element.price}</span>
                     </div>
                 `;
                     let objProduct = {};
@@ -111,7 +111,7 @@ export function generateRandomElements(arrayProducts) {
             // console.log(this.mainArrayObjects)
             this.mainArrayObjects.forEach(function (product) {
                 product.element.querySelector('.category-product__price').addEventListener('click', () => {
-                    console.log(product.data)
+                    console.log(product)
                     cartInstance.addItem(product.data)
                 })
             })

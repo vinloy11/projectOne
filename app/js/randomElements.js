@@ -12,6 +12,9 @@ export function generateRandomElements(arrayProducts) {
             document.getElementsByClassName("content-center"),
             document.getElementsByClassName("content-bottom")
         ],
+        arrayElements: [],
+        arrayDataElements: [],
+        mainArrayObjects: [],
         locationMain: document.querySelector('.home-decor .category-products'),
         minValue: 0,
         maxValue: arrayProducts.length,
@@ -39,6 +42,11 @@ export function generateRandomElements(arrayProducts) {
                         <span class="category-product__price block">${element.price}</span>
                     </div>
                 `;
+                    let objProduct = {};
+                    objProduct.data = element;
+                    objProduct.element = article;
+                    this.mainArrayObjects.push(objProduct);
+
                     this.locationMain.appendChild(article);
                 // } else if (location[0].classList.contains("content-center")) {
                 //     this.getRandomInt(0, 1);
@@ -100,6 +108,14 @@ export function generateRandomElements(arrayProducts) {
                 }
                 countElements = arrayProducts.length - usedElements;
             } while (countElements > 0);
+            // console.log(this.mainArrayObjects)
+            this.mainArrayObjects.forEach(function (product) {
+                product.element.querySelector('.category-product__price').addEventListener('click', () => {
+                    console.log(product.data)
+                    cartInstance.addItem(product.data)
+                })
+            })
+
         }
     };
     blocksGeneration.init();

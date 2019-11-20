@@ -4,11 +4,10 @@ import {toggleMenu} from './toggleMenu.js';
 import {getData} from './getData.js'
 import {goToCategory} from "./goToCategory.js";
 import {Cart} from "./cart.js"
-
+window.cartInstance = new Cart(0);
 dich();
 
 getData('http://localhost:3000/data/menuItems.json', 'GET', function (data) {
-    // console.log(data)
     toggleMenu(data)
 });
 
@@ -20,7 +19,8 @@ if (startString !== -1) {
     });
 } else {
     getData('http://localhost:3000/data/products.json', 'GET', function (data) {
-        generateRandomElements(data)
+        generateRandomElements(data);
+        console.log('LoL')
     });
 }
 
@@ -30,10 +30,10 @@ let value;
 
 
 
-window.cartInstance = new Cart(0)
 
-cartInstance.addItem({price: 4400})
-cartInstance.addItem({price: 200})
+
+// cartInstance.addItem({price: 4400});
+// cartInstance.addItem({price: 200});
 
 
 // setTimeout(function() {

@@ -111,7 +111,7 @@ export function generateRandomElements(arrayProducts) {
             // console.log(this.mainArrayObjects)
             this.mainArrayObjects.forEach(function (product) {
                 product.element.querySelector('.category-product__price').addEventListener('click', () => {
-                    console.log(product)
+                    // console.log(product)
                     cartInstance.addItem(product.data)
                 })
             })

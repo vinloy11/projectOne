@@ -11,26 +11,26 @@ dich();
 // for (i = 0; i < 11; i++) {
 //     jsonFile.writeFile('loop.json', "id :" + i + " square :" + i * i);
 // }
-getData('http://localhost:3000/data/categoryProducts.json', 'GET', function (data) {
-    // toggleMenu(data)
-    console.log(data);
-    let id = 11;
-    data.forEach(function(category) {
-        category.products.forEach(function(product){
-            product.id = id;
-            id++
-        })
-    })
-    console.log(JSON.stringify(data))
-    // let newProducts = [];
-    // let id = 0;
-    // data.forEach(function(item){
-    //     item.id = id;
-    //     id++;
-    //     console.log(item);
-    // })
-    // console.log(JSON.stringify(data))
-});
+// getData('http://localhost:3000/data/categoryProducts.json', 'GET', function (data) {
+//     // toggleMenu(data)
+//     console.log(data);
+//     let id = 11;
+//     data.forEach(function(category) {
+//         category.products.forEach(function(product){
+//             product.id = id;
+//             id++
+//         })
+//     })
+//     console.log(JSON.stringify(data))
+//     // let newProducts = [];
+//     // let id = 0;
+//     // data.forEach(function(item){
+//     //     item.id = id;
+//     //     id++;
+//     //     console.log(item);
+//     // })
+//     // console.log(JSON.stringify(data))
+// });
 
 
 getData('http://localhost:3000/data/menuItems.json', 'GET', function (data) {
@@ -46,15 +46,21 @@ if (startString !== -1) {
 } else {
     getData('http://localhost:3000/data/products.json', 'GET', function (data) {
         generateRandomElements(data);
-        console.log('LoL')
     });
 }
 
+// let value;
+let customPanel = document.querySelector('.custom-panel');
+customPanel.addEventListener('click', clickCustomPanel);
 
-
-let value;
-
-
+function clickCustomPanel(e) {
+    let target = e.target;
+    let button = document.querySelector('[data-cart-button]');
+    let its_block = target === button || button.contains(target);
+    if (its_block) {
+        cartInstance.renderCartTemplate()
+    }
+}
 
 
 

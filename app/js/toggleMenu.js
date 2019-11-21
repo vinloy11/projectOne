@@ -87,9 +87,9 @@ export function toggleMenu(menuItems) {
         array.forEach(function (text) {
             let templateLi = document.querySelector('#li-item');
             let li = templateLi.content.querySelector('.li-inf__category');
-            let a = templateLi.content.querySelector('a')
+            let a = templateLi.content.querySelector('a');
             a.textContent = text.name;
-            a.setAttribute('href', text.link)
+            a.setAttribute('href', text.link);
             let clone = document.importNode(templateLi.content, true);
             menu.querySelector('ul').appendChild(clone)
         });

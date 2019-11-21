@@ -1,1 +1,79 @@
-[{"src":"assets/img/main3.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":0},{"src":"assets/img/layer3.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":1},{"src":"assets/img/main.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":2},{"src":"assets/img/main4.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":3},{"src":"assets/img/main5.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":4},{"src":"assets/img/main1.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":5},{"src":"assets/img/layer1.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":6},{"src":"assets/img/layer2.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":7},{"src":"assets/img/main7.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":8},{"src":"assets/img/main.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":9},{"src":"assets/img/main3.jpg","name":"Product Name Here","supplier":"Supplier’s Name Here","price":"29354.75","id":10}]
+[
+  {
+    "src": "assets/img/main3.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "354.75",
+    "id": 0
+  },
+  {
+    "src": "assets/img/layer3.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "294.75",
+    "id": 1
+  },
+  {
+    "src": "assets/img/main.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "935.75",
+    "id": 2
+  },
+  {
+    "src": "assets/img/main4.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "234.75",
+    "id": 3
+  },
+  {
+    "src": "assets/img/main5.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "7935",
+    "id": 4
+  },
+  {
+    "src": "assets/img/main1.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "629",
+    "id": 5
+  },
+  {
+    "src": "assets/img/layer1.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "4234",
+    "id": 6
+  },
+  {
+    "src": "assets/img/layer2.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "8321",
+    "id": 7
+  },
+  {
+    "src": "assets/img/main7.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "1942",
+    "id": 8
+  },
+  {
+    "src": "assets/img/main.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "4435",
+    "id": 9
+  },
+  {
+    "src": "assets/img/main3.jpg",
+    "name": "Product Name Here",
+    "supplier": "Supplier’s Name Here",
+    "price": "5254.75",
+    "id": 10
+  }
+]

@@ -60,6 +60,15 @@ export function toggleMenu(menuItems) {
         menu.classList.remove("hidden");
         menu.querySelectorAll('li').forEach(function (item) {
             item.addEventListener('click', function () {
+                document.querySelector('.content').innerHTML = ` <section data-home-decor-section class="home-decor ">
+            <h1 class="category-title">Clothing</h1>
+            <section class="category-products">
+
+            </section>
+            <div class="view-more">
+                <button class="btn btn_white-green">View More Items</button>
+            </div>
+        </section>`
                 document.querySelector('.home-decor .category-products').innerHTML = "";
                 let url = window.location.href;
                 let startString = url.indexOf('#');

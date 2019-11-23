@@ -1,7 +1,3 @@
-import {getData} from './getData.js'
-import {goToCategory} from "./goToCategory.js";
-import {generateRandomElements} from "./randomElements.js";
-
 export function toggleMenu(menuItems) {
 
     let toggleMenu = function (element) {
@@ -58,32 +54,7 @@ export function toggleMenu(menuItems) {
 
     function openMEnu() {
         menu.classList.remove("hidden");
-        menu.querySelectorAll('li').forEach(function (item) {
-            item.addEventListener('click', function () {
-                document.querySelector('.content').innerHTML = ` <section data-home-decor-section class="home-decor ">
-            <h1 class="category-title">Clothing</h1>
-            <section class="category-products">
-
-            </section>
-            <div class="view-more">
-                <button class="btn btn_white-green">View More Items</button>
-            </div>
-        </section>`
-                document.querySelector('.home-decor .category-products').innerHTML = "";
-                let url = window.location.href;
-                let startString = url.indexOf('#');
-                if (startString !== -1) {
-                    getData('http://localhost:3000/data/categoryProducts.json', 'GET', function (data) {
-                        goToCategory(data)
-                    });
-                } else {
-                    getData('http://localhost:3000/data/products.json', 'GET', function (data) {
-                        generateRandomElements(data)
-                    });
-                }
-                document.querySelector('.li-inf').classList.add('hidden')
-            })
-        })
+        menu.querySelectorAll('li').forEach(function (item) {})
     }
 
     function closeMenu() {

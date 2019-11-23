@@ -1,7 +1,9 @@
 import { getData } from "./getData.js";
+import * as checkout from "./checkout.js"
+import * as payment from "./payment.js"
+import * as congratulations from "./congratulations.js"
 export class Router {
   constructor() {
-    // this.url = window.location.href;
   }
 
   parseUrl(url) {
@@ -19,29 +21,62 @@ export class Router {
 
   goTo(page) {
     if (page === "cart") {
-      console.log("cart");
+      this.goToCart()
     } else if (page === "checkout") {
-      console.log("checkkout");
+      this.goToCheckout()
     } else if (page === "payment") {
-      console.log("payment");
-    } else if (page === "") {
-      this.randomJSON();
+      this.goToPayment()
+    } else if (page === "congratulations") {
+      this.goToCongratulations()
+    }else if (page === "") {
+      this.randomJSON()
     } else {
-      console.log("Категория");
+      this.goToCategory(page)
     }
   }
 
   randomJSON() {
-    let rand = Math.floor(Math.random() * (2 - 1 + 1)) + 0;
+    let rand = Math.floor(Math.random() * (2 - 1 + 1));
     if (rand === 1) {
       this.randomElements("http://localhost:3000/data/products.json");
     } else {
       this.randomElements("http://localhost:3000/data/products2.json");
     }
   }
+
   randomElements(url) {
     this.getDataProducts(url).then(products => {
       getProducts.renderProductsArray(products);
     });
   }
+
+  goToCategory(category) {
+    this.getDataProducts('http://localhost:3000/data/categoryProducts.json').then(products => {
+        products.forEach(product => {
+          if (product.category === category) {
+            getProducts.renderProductsArray(product.products);
+            if (document.querySelector('.li-inf')){
+              document.querySelector('.li-inf').classList.add('hidden')
+            }
+          }
+        })
+    })
+  }
+
+  goToCart() {
+    cartInstance.renderCartTemplate();
+  }
+
+  goToCheckout() {
+    checkout.renderCheckout()
+  }
+
+  goToPayment() {
+    payment.renderPayment()
+  }
+
+  goToCongratulations() {
+    congratulations.renderCongratulations()
+  }
+
 }

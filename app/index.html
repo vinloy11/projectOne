@@ -1,420 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>hw4</title>
-  </head>
-  <body>
-    <main>
-      <header>
+</head>
+<body>
+<main>
+    <header>
         <section class="header-top">
-          <div data-go-home class="logo">
-            <img src="assets/img/logo.svg" alt="shoppe" />
-          </div>
-          <div class="input-search">
-            <input
-              type="text"
-              class="input-text input-search__text"
-              placeholder="Search for Products"
-            />
-            <button class="btn btn_green input-search__btn">Search</button>
-          </div>
-          <div class="custom-panel flex">
-            <button data-login class="custom-panel__item btn btn_white">
-              Log in
-            </button>
-            <div class="custom-panel__item relative">
-              <button class="btn btn_white">Sign up</button>
+            <div data-go-home class="logo">
+                <a href="#"><img src="assets/img/logo.svg" alt="shoppe"/></a>
             </div>
-            <svg class="custom-panel__item icon">
-              <use xlink:href="assets/img/icons.svg?#heart"></use>
-            </svg>
-            <div class="cart-wrapper">
-              <a href="#cart">
-                <!--                    <span class="cart__cart-value "></span>-->
-                <svg class="custom-panel__item icon" data-cart-button>
-                  <use
-                    data-cart-svg
-                    xlink:href="assets/img/icons.svg?#cart"
-                  ></use>
+            <div class="input-search">
+                <input
+                        type="text"
+                        class="input-text input-search__text"
+                        placeholder="Search for Products"
+                />
+                <button class="btn btn_green input-search__btn">Search</button>
+            </div>
+            <div class="custom-panel flex">
+                <button data-login class="custom-panel__item btn btn_white">
+                    Log in
+                </button>
+                <div class="custom-panel__item relative">
+                    <button class="btn btn_white">Sign up</button>
+                </div>
+                <svg class="custom-panel__item icon">
+                    <use xlink:href="assets/img/icons.svg?#heart"></use>
                 </svg>
-              </a>
+                <div class="cart-wrapper">
+                    <a href="#cart">
+                        <!--                    <span class="cart__cart-value "></span>-->
+                        <svg class="custom-panel__item icon" data-cart-button>
+                            <use
+                                    data-cart-svg
+                                    xlink:href="assets/img/icons.svg?#cart"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="custom-panel__item">
+                    <img
+                            class="profile-image"
+                            src="assets/img/user-10.jpg"
+                            alt="profile-image"
+                    />
+                    <svg class="icon icon_polygon">
+                        <use xlink:href="assets/img/icons.svg?#polygon"></use>
+                    </svg>
+                </div>
             </div>
-            <div class="custom-panel__item">
-              <img
-                class="profile-image"
-                src="assets/img/user-10.jpg"
-                alt="profile-image"
-              />
-              <svg class="icon icon_polygon">
-                <use xlink:href="assets/img/icons.svg?#polygon"></use>
-              </svg>
-            </div>
-          </div>
         </section>
         <nav class="header-bottom">
-          <ul data-li class="header-bottom__list">
-            <li data-category="1" class="header-bottom__item">
-              <a href="#">Home Decor</a>
-            </li>
-            <li data-category="2" class="header-bottom__item">
-              <a href="#">Furniture</a>
-            </li>
-            <li data-category="3" class="header-bottom__item">
-              <a href="#">Lighting</a>
-            </li>
-            <li data-category="4" class="header-bottom__item">
-              <a href="#">Home Accent</a>
-            </li>
-            <li data-category="5" class="header-bottom__item">
-              <a href="#">Rugs</a>
-            </li>
-            <li data-category="6" class="header-bottom__item">
-              <a href="#">Outdoors</a>
-            </li>
-            <li data-category="7" class="header-bottom__item">
-              <a href="#">Holidays</a>
-            </li>
-            <li data-category="8" class="header-bottom__item">
-              <a href="#">Gifts</a>
-            </li>
-            <li data-category="9" class="header-bottom__item">
-              <a href="#">Events</a>
-            </li>
-          </ul>
+            <ul data-li class="header-bottom__list">
+                <li data-category="1" class="header-bottom__item">
+                    <a href="#">Home Decor</a>
+                </li>
+                <li data-category="2" class="header-bottom__item">
+                    <a href="#">Furniture</a>
+                </li>
+                <li data-category="3" class="header-bottom__item">
+                    <a href="#">Lighting</a>
+                </li>
+                <li data-category="4" class="header-bottom__item">
+                    <a href="#">Home Accent</a>
+                </li>
+                <li data-category="5" class="header-bottom__item">
+                    <a href="#">Rugs</a>
+                </li>
+                <li data-category="6" class="header-bottom__item">
+                    <a href="#">Outdoors</a>
+                </li>
+                <li data-category="7" class="header-bottom__item">
+                    <a href="#">Holidays</a>
+                </li>
+                <li data-category="8" class="header-bottom__item">
+                    <a href="#">Gifts</a>
+                </li>
+                <li data-category="9" class="header-bottom__item">
+                    <a href="#">Events</a>
+                </li>
+            </ul>
         </nav>
-      </header>
-      <section data-li-inf class="li-inf hidden">
+    </header>
+    <section data-li-inf class="li-inf hidden">
         <div data-home-decor-item class="li-inf__item li-inf__item_home-decor">
-          <div class="li-inf__top">
-            <h2 class="li-inf__title">Home decor</h2>
-            <span class="li-inf__description"
-              >Create & live your unique style</span
-            >
-            <span class="li-inf__count">25478 items</span>
-          </div>
-          <ul class="li-inf__bottom"></ul>
+            <div class="li-inf__top">
+                <h2 class="li-inf__title">Home decor</h2>
+                <span class="li-inf__description"
+                >Create & live your unique style</span
+                >
+                <span class="li-inf__count">25478 items</span>
+            </div>
+            <ul class="li-inf__bottom"></ul>
         </div>
-      </section>
-      <div data-bread-crumbs class="bread-crumbs ">
+    </section>
+    <div data-bread-crumbs class="bread-crumbs ">
         <!-- <div data-go-home class="bread-crumbs__item"><a href="#">Home</a></div>
         <svg data-clothing-bread class="icon icon_polygon bread-crumbs__icon_polygon hidden">
             <use xlink:href="assets/img/icons.svg?#polygon"></use>
         </svg>
         <div data-clothing-bread class="bread-crumbs__item">Clothing</div> -->
-      </div>
-      <section class="content"></section>
-      <footer class="footer">
+    </div>
+    <section class="content"></section>
+    <footer class="footer">
         <div class="footer-top">
-          <div class="footer-column">
-            <h1>How We Help</h1>
-            <ul>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h1>Get to Know Us</h1>
-            <ul>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h1>Join the Community</h1>
-            <ul>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Lorem ipsum.</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Retailers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Interiors Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column follow-us">
-            <h1>Follow Us</h1>
-            <ul>
-              <li class="footer__item footer__item_follow">
-                <div class="icon-social">
-                  <svg class="icon icon_social">
-                    <use xlink:href="assets/img/icons.svg?#ff"></use>
-                  </svg>
-                </div>
-                <a class="footer__link" href="#">facebook</a>
-              </li>
-              <li class="footer__item footer__item_follow">
-                <div class="icon-social">
-                  <svg class="icon icon_social">
-                    <use xlink:href="assets/img/icons.svg?#tt"></use>
-                  </svg>
-                </div>
-                <a class="footer__link" href="#">Pinterest</a>
-              </li>
-              <li class="footer__item footer__item_follow">
-                <div class="icon-social">
-                  <svg class="icon icon_social">
-                    <use xlink:href="assets/img/icons.svg?#pp"></use>
-                  </svg>
-                </div>
-                <a class="footer__link" href="#">Twitter</a>
-              </li>
-              <li class="footer__item footer__item_follow">
-                <div class="icon-social">
-                  <svg class="icon icon_social">
-                    <use xlink:href="assets/img/icons.svg?#inst"></use>
-                  </svg>
-                </div>
-                <a class="footer__link" href="#">Instagram</a>
-              </li>
-            </ul>
-          </div>
+            <div class="footer-column">
+                <h1>How We Help</h1>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Get to Know Us</h1>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Join the Community</h1>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Lorem ipsum.</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Retailers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Interiors Design</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column follow-us">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#ff"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">facebook</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#tt"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Pinterest</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#pp"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Twitter</a>
+                    </li>
+                    <li class="footer__item footer__item_follow">
+                        <div class="icon-social">
+                            <svg class="icon icon_social">
+                                <use xlink:href="assets/img/icons.svg?#inst"></use>
+                            </svg>
+                        </div>
+                        <a class="footer__link" href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer__border"></div>
-          <address class="contacts">
-            <span><a href="#">© 2016 Uimint.com</a></span>
-            <span><a href="">Terms & Conditions</a></span>
-            <span><a href="">Privacy</a></span>
-          </address>
+            <div class="footer__border"></div>
+            <address class="contacts">
+                <span><a href="#">© 2016 Uimint.com</a></span>
+                <span><a href="">Terms & Conditions</a></span>
+                <span><a href="">Privacy</a></span>
+            </address>
         </div>
-      </footer>
-    </main>
-    <section data-background class="window-background hidden"></section>
-    <section data-modal class="modal hidden">
-      <div class="modal__content">
+    </footer>
+</main>
+<section data-background class="window-background hidden"></section>
+<section data-modal class="modal hidden">
+    <div class="modal__content">
         <svg data-modal-close class="icon icon_close-modal">
-          <use xlink:href="assets/img/icons.svg?#reset"></use>
+            <use xlink:href="assets/img/icons.svg?#reset"></use>
         </svg>
         <section class="modal__wrapper modal__wrapper_first">
-          <img src="assets/img/logo.svg" alt="shoppe" />
-          <form>
-            <div class="wrapper-inf__inp">
-              <input
-                class="input-text payment-inf_field"
-                id="name"
-                type="text"
-                placeholder="Username / Email Address"
-              />
-            </div>
-            <div class="wrapper-inf__inp">
-              <input
-                class="input-text payment-inf_field"
-                id="name"
-                type="text"
-                placeholder="Password"
-              />
-            </div>
-            <div class="wrapper-inf__inp wrapper-inf__inp_checkbox text-left">
-              <input
-                id="checkbox-3"
-                type="checkbox"
-                class="input-checkbox"
-                checked
-              />
-              <label for="checkbox-3">
-                <svg class="icon icon_check">
-                  <use xlink:href="assets/img/icons.svg?#check"></use>
-                </svg>
-                Create an Account?
-              </label>
-              <span class="right"><a href="#">Forgot Password?</a></span>
-            </div>
-            <div class="wrapper-inf__inp wrapper-inf__inp_btn">
-              <button class="btn btn_green btn_login">Log in</button>
-              <button class="btn btn_white btn_login">Log in as a Guest</button>
-            </div>
-          </form>
+            <img src="assets/img/logo.svg" alt="shoppe"/>
+            <form>
+                <div class="wrapper-inf__inp">
+                    <input
+                            class="input-text payment-inf_field"
+                            id="name"
+                            type="text"
+                            placeholder="Username / Email Address"
+                    />
+                </div>
+                <div class="wrapper-inf__inp">
+                    <input
+                            class="input-text payment-inf_field"
+                            id="name"
+                            type="text"
+                            placeholder="Password"
+                    />
+                </div>
+                <div class="wrapper-inf__inp wrapper-inf__inp_checkbox text-left">
+                    <input
+                            id="checkbox-3"
+                            type="checkbox"
+                            class="input-checkbox"
+                            checked
+                    />
+                    <label for="checkbox-3">
+                        <svg class="icon icon_check">
+                            <use xlink:href="assets/img/icons.svg?#check"></use>
+                        </svg>
+                        Create an Account?
+                    </label>
+                    <span class="right"><a href="#">Forgot Password?</a></span>
+                </div>
+                <div class="wrapper-inf__inp wrapper-inf__inp_btn">
+                    <button class="btn btn_green btn_login">Log in</button>
+                    <button class="btn btn_white btn_login">Log in as a Guest</button>
+                </div>
+            </form>
         </section>
         <div class="modal__border modal__border_first">
-          <div class="border-el"></div>
-          <div>or</div>
-          <div class="border-el"></div>
+            <div class="border-el"></div>
+            <div>or</div>
+            <div class="border-el"></div>
         </div>
 
         <section class="modal__wrapper sign-in-with">
-          Sign in with
-          <section class="soc-ad">
-            <div class="soc-ad__item soc-ad__item_fb">
-              <svg class="icon icon_social-big">
-                <use xlink:href="assets/img/icons.svg?#ff-big"></use>
-              </svg>
-            </div>
-            <div class="soc-ad__item soc-ad__item_gg">
-              <svg class="icon icon_social-big icon_gg-big">
-                <use xlink:href="assets/img/icons.svg?#gg-big"></use>
-              </svg>
-            </div>
-            <div class="soc-ad__item soc-ad__item_pp ">
-              <svg class="icon icon_social-big icon_pp-big">
-                <use xlink:href="assets/img/icons.svg?#pp-big"></use>
-              </svg>
-            </div>
-          </section>
+            Sign in with
+            <section class="soc-ad">
+                <div class="soc-ad__item soc-ad__item_fb">
+                    <svg class="icon icon_social-big">
+                        <use xlink:href="assets/img/icons.svg?#ff-big"></use>
+                    </svg>
+                </div>
+                <div class="soc-ad__item soc-ad__item_gg">
+                    <svg class="icon icon_social-big icon_gg-big">
+                        <use xlink:href="assets/img/icons.svg?#gg-big"></use>
+                    </svg>
+                </div>
+                <div class="soc-ad__item soc-ad__item_pp ">
+                    <svg class="icon icon_social-big icon_pp-big">
+                        <use xlink:href="assets/img/icons.svg?#pp-big"></use>
+                    </svg>
+                </div>
+            </section>
         </section>
         <div class="modal__border modal__border_last"></div>
         <section class="modal__wrapper modal__wrapper_register">
-          <a href="#">Not have an Account?</a>
-          <button class="btn btn_white btn_register">Register</button>
+            <a href="#">Not have an Account?</a>
+            <button class="btn btn_white btn_register">Register</button>
         </section>
-      </div>
-    </section>
-    <template id="li-item">
-      <li data-go-to-category class="li-inf__category">
+    </div>
+</section>
+<template id="li-item">
+    <li data-go-to-category class="li-inf__category">
         <a href="#">${item}</a>
-      </li>
-    </template>
-    <template id="cart">
-      <a href="#cart">
+    </li>
+</template>
+<template id="cart">
+    <a href="#cart">
         <span class="cart__cart-value" data-price-value></span>
         <svg class="custom-panel__item icon" data-cart-button>
-          <use xlink:href="assets/img/icons.svg?#cart"></use>
+            <use xlink:href="assets/img/icons.svg?#cart"></use>
         </svg>
-      </a>
-    </template>
-
-    <template id="cart-item">
-      <tr class="cart__tr">
-        <td class="cart__td">
-          <article class="product">
-            <svg data-reset="true" class="icon icon__reset">
-              <use xlink:href="assets/img/icons.svg?#reset"></use>
+    </a>
+</template>
+<template id="product">
+    <article class="category-product">
+        <img class="category-product__img" src="" alt="">
+        <div class="category-product__inf">
+            <span class="category-product__supplier block">supplier name supplier name</span>
+            <a href="#" class="category-product__name block"></a>
+            <span class="category-product__price "></span>
+            <svg data-add="true" class="custom-panel__item icon">
+                <use data-add="true" data-cart-svg="" xlink:href="assets/img/icons.svg?#cart"></use>
             </svg>
-            <div class="product__block-for-image">
-              <img class="product__image" src="img/product.jpg" alt="" />
-            </div>
-            <div class="product__details">
-              <span class="product__name">Product Name Here</span>
-              <span class="product__supplier">Supplier’s Name Here</span>
-            </div>
-          </article>
+        </div>
+    </article>
+</template>
+<template id="cart-item">
+    <tr class="cart__tr">
+        <td class="cart__td">
+            <article class="product">
+                <svg data-reset="true" class="icon icon__reset">
+                    <use xlink:href="assets/img/icons.svg?#reset"></use>
+                </svg>
+                <div class="product__block-for-image">
+                    <img class="product__image" src="img/product.jpg" alt=""/>
+                </div>
+                <div class="product__details">
+                    <span class="product__name">Product Name Here</span>
+                    <span class="product__supplier">Supplier’s Name Here</span>
+                </div>
+            </article>
         </td>
         <td class="cart__td cart__td_end">
-          <span class="product__price">$28.99</span>
+            <span class="product__price">$28.99</span>
         </td>
         <td class="cart__td cart__td_end">
-          <input
-            placeholder="1"
-            class="input-text input-text_small"
-            type="text"
-          />
+            <input
+                    placeholder="1"
+                    class="input-text input-text_small"
+                    type="text"
+            />
         </td>
         <td class="cart__td cart__td_end cart__td_sum">
-          <span class="product__sum">$28.99</span>
+            <span class="product__sum">$28.99</span>
         </td>
         <td class="cart__td "></td>
-      </tr>
-    </template>
-    <template id="cart-page">
-      <section class="shop shop_center">
+    </tr>
+</template>
+<template id="cart-page">
+    <section class="shop shop_center">
         <section class="cart">
-          <table data-main-block class="cart__table">
-            <thead class="cart__thead">
-              <tr>
-                <th width="53%" class="cart__th">ITEM DETAIL</th>
-                <th class="cart__th">PRICE</th>
-                <th class="cart__th">QTY</th>
-                <th class="cart__th"></th>
-                <th class="cart__th"></th>
-              </tr>
-            </thead>
-            <tfoot class="cart__tfoot">
-              <tr>
-                <td class="cart__td">
-                  <div class="coupon-input">
-                    <input
-                      placeholder="Coupon code"
-                      class="input-text input-text coupon-input__input-text"
-                      type="text"
-                    />
-                    <button class="btn" disabled>APPLY</button>
-                  </div>
-                </td>
-                <td colspan="2" class="cart__td cart__td_center">Subtotal</td>
-                <td class="cart__td cart__td_end" data-subtotal>$145.84</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td colspan="2" class="cart__td cart__td_center">Shipping</td>
-                <td class="cart__td cart__td_end">$5.00</td>
-              </tr>
-              <tr>
-                <td class="cart__td"></td>
-                <td colspan="4" class="cart__td cart__td_total-amount">
-                  <div class="total-amount">
+            <table data-main-block class="cart__table">
+                <thead class="cart__thead">
+                <tr>
+                    <th width="53%" class="cart__th">ITEM DETAIL</th>
+                    <th class="cart__th">PRICE</th>
+                    <th class="cart__th">QTY</th>
+                    <th class="cart__th"></th>
+                    <th class="cart__th"></th>
+                </tr>
+                </thead>
+                <tfoot class="cart__tfoot">
+                <tr>
+                    <td class="cart__td">
+                        <div class="coupon-input">
+                            <input
+                                    placeholder="Coupon code"
+                                    class="input-text input-text coupon-input__input-text"
+                                    type="text"
+                            />
+                            <button class="btn" disabled>APPLY</button>
+                        </div>
+                    </td>
+                    <td colspan="2" class="cart__td cart__td_center">Subtotal</td>
+                    <td class="cart__td cart__td_end" data-subtotal>$145.84</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="cart__td cart__td_center">Shipping</td>
+                    <td class="cart__td cart__td_end">$5.00</td>
+                </tr>
+                <tr>
+                    <td class="cart__td"></td>
+                    <td colspan="4" class="cart__td cart__td_total-amount">
+                        <div class="total-amount">
                     <span class="total-amount_title">Total Amount</span
                     ><span class="total-amount_amount" data-total-amount
-                      >$145.84</span
-                    >
-                    <button
-                      data-process-to-checkout
-                      class="btn btn_green btn_process-to-checkout"
-                    >
-                      PROCESS TO CHECKOUT
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            </tfoot>
-            <tbody class="cart__tbody"></tbody>
-          </table>
+                        >$145.84</span
+                        >
+                            <a href="#checkout"
+                               data-process-to-checkout
+                               class="btn btn_green btn_process-to-checkout"
+                            >
+                                PROCESS TO CHECKOUT
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+                <tbody class="cart__tbody"></tbody>
+            </table>
         </section>
-      </section>
-      <aside data-main-block class="ad-unit">
-        <img class="ad-unit__img" src="assets/img/ad.jpg" alt="" />
-      </aside>
-    </template>
-    <template id="home-page">
-      <section data-home-decor-section class="home-decor ">
+    </section>
+</template>
+<template id="home-page">
+    <section data-home-decor-section class="home-decor ">
         <section class="category-products"></section>
-      </section>
-    </template>
-  </body>
-  <script type="module" src="js/script.js"></script>
+    </section>
+</template>
+<template id="checkout-page">
+    <section class="shop shop_center">
+        <section class="cart">
+            <section data-checkout-section class="checkout checkout_address ">
+                <ul class="checkout__navigation">
+                    <a href="#checkout">
+                        <li data-shipping-address class="checkout__navigation-item checkout__navigation-item_active">
+                            Shipping Address
+                        </li>
+                    </a>
+                    <a href="#payment">
+                        <li data-payment class="checkout__navigation-item ">Payment</li>
+                    </a>
+                </ul>
+                <form class="shipping">
+                    <div class="col-3">
+                        <label class="payment-inf_label" for="first-name">First Name*</label>
+                        <input class="input-text payment-inf_field" id="first-name" type="text" placeholder="Jhone">
+                        <div class="wrapper-inf__inp">
+                            <label class="payment-inf_label" for="first-name">First Name*</label>
+                            <select name="example" size="1">
+                                <option value="">Пункт 1</option>
+                                <option value="">Пункт 2</option>
+                                <option value="">Пункт 3</option>
+                                <option value="">Пункт 4</option>
+                                <option value="">Пункт 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label class="payment-inf_label" for="last-name">Last Name*</label>
+                        <input class="input-text payment-inf_field" id="last-name" type="text" placeholder="Smith">
+                        <div class="wrapper-inf__inp">
+                            <label class="payment-inf_label" for="city">Town / City*</label>
+                            <input class="input-text payment-inf_field" id="city" type="text"
+                                   placeholder="eg. New york">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label class="payment-inf_label" for="company-name">Company Name</label>
+                        <input class="input-text payment-inf_field" id="company-name" type="text"
+                               placeholder="Rosuson Industries">
+                        <div class="wrapper-inf__inp">
+                            <label class="payment-inf_label" for="postcode">Postcode*</label>
+                            <input class="input-text payment-inf_field" id="postcode" type="text"
+                                   placeholder="eg. 358745">
+                        </div>
+                    </div>
+                    <div class="wrapper-inf__inp col-12">
+                        <label class="payment-inf_label" for="address">Address*</label>
+                        <span class="error">* Required</span>
+                        <input class="input-text payment-inf_field" id="address" type="text"
+                               placeholder="eg. 2nd steer, Costrica, Uk 354548">
+                    </div>
+                    <div class="wrapper-inf__inp col-3">
+                        <label class="payment-inf_label" for="email-address">Email Address*</label>
+                        <input class="input-text payment-inf_field" id="email-address" type="text"
+                               placeholder="abc@xyz.com">
+                    </div>
+                    <div class="wrapper-inf__inp col-3">
+                        <label class="payment-inf_label" for="phone">Phone</label>
+                        <input class="input-text payment-inf_field" id="phone" type="text"
+                               placeholder="eg. 94 788 1221">
+                    </div>
+                    <div class="wrapper-inf__inp col-3 cart__td_center">
+                        <div class="wrapper-inf__inp shipping_checkbox_first">
+                            <input id="one-checkbox" type="checkbox" class="input-checkbox">
+                            <label for="one-checkbox">
+                                <svg class="icon icon_check">
+                                    <use xlink:href="assets/img/icons.svg?#check"></use>
+                                </svg>
+                                Create an Account?
+                            </label>
+                        </div>
+                        <div class="wrapper-inf__inp">
+                            <input id="two-checkbox" type="checkbox" class="input-checkbox" checked>
+                            <label for="two-checkbox">
+                                <svg class="icon icon_check">
+                                    <use xlink:href="assets/img/icons.svg?#check"></use>
+                                </svg>
+                                Create an Account?</label>
+                        </div>
+                    </div>
+                </form>
+                <section class="back-or-run"> <!-- xD -->
+                    <a href="#cart" data-back-to-cart class="btn btn_white btn_back">Back</a>
+                    <a href="#payment" class="btn btn_green btn_pay" data-next-page>Next</a>
+                </section>
+            </section>
+        </section>
+    </section>
+</template>
+<template id="payment-page">
+    <section class="shop shop_center">
+        <section class="cart">
+            <section data-checkout-section class="checkout checkout_payment">
+                <ul class="checkout__navigation">
+                    <a href="#checkout">
+                        <li data-shipping-address class="checkout__navigation-item ">
+                            Shipping Address
+                        </li>
+                    </a>
+                    <a href="#payment">
+                        <li data-payment class="checkout__navigation-item checkout__navigation-item_active">Payment</li>
+                    </a>
+                </ul>
+                <div class="checkout__table">
+                    <table class="cart__table cart__table_mini">
+                        <tfoot>
+                        <tr>
+                            <td class="cart__td cart__td_center" colspan="2">Shipping Charge</td>
+                            <td class="cart__td cart__td_end">$5.00</td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr class="cart__tr cart__tr_mini">
+                            <td width="53%" class="cart__td cart__td_mini">
+                                <article class="product">
+                                    <div class="product__block-for-image block-for-image_mini">
+                                        <img class="product__image product__image_mini" src="img/product.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__details">
+                                            <span class="product__name product__name_mini">
+                                                Product Name Here
+                                            </span>
+                                    </div>
+                                </article>
+                            </td>
+                            <td class="cart__td cart__td_end">
+                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
+                                       type="text">
+                            </td>
+                            <td class="cart__td cart__td_end">$28.99</td>
+                        </tr>
+                        <tr class="cart__tr cart__tr_mini">
+                            <td width="53%" class="cart__td cart__td_mini">
+                                <article class="product">
+                                    <div class="product__block-for-image block-for-image_mini">
+                                        <img class="product__image product__image_mini" src="img/bitmap3.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__details">
+                                            <span class="product__name product__name_mini">
+                                                Product Name Here
+                                            </span>
+                                    </div>
+                                </article>
+                            </td>
+                            <td class="cart__td cart__td_end">
+                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
+                                       type="text">
+                            </td>
+                            <td class="cart__td cart__td_end">$28.99</td>
+                        </tr>
+                        <tr class="cart__tr cart__tr_mini">
+                            <td width="53%" class="cart__td cart__td_mini">
+                                <article class="product">
+                                    <div class="product__block-for-image block-for-image_mini">
+                                        <img class="product__image product__image_mini" src="img/bitmap2.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__details">
+                                            <span class="product__name product__name_mini">
+                                                Product Name Here
+                                            </span>
+                                    </div>
+                                </article>
+                            </td>
+                            <td class="cart__td cart__td_end">
+                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
+                                       type="text">
+                            </td>
+                            <td class="cart__td cart__td_end">$28.99</td>
+                        </tr>
+                        <tr class="cart__tr cart__tr_mini">
+                            <td width="53%" class="cart__td cart__td_mini">
+                                <article class="product">
+                                    <div class="product__block-for-image block-for-image_mini">
+                                        <img class="product__image product__image_mini" src="img/product.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__details">
+                                            <span class="product__name product__name_mini">
+                                                Product Name Here
+                                            </span>
+                                    </div>
+                                </article>
+                            </td>
+                            <td class="cart__td cart__td_end">
+                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
+                                       type="text">
+                            </td>
+                            <td class="cart__td cart__td_end">$28.99</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <section class="payment-inf">
+                    <div class="wrapper-inf">
+                        <input data-radio-payment type="radio" id="contactChoice1"
+                               name="contact" value="phone" class="input-radio" checked>
+                        <label for="contactChoice1">Credit Card / Debit Card</label>
+                        <form>
+                            <div class="wrapper-inf__inp">
+                                <label class="payment-inf_label" for="name1">Name on Card</label>
+                                <input class="input-text payment-inf_field" id="name1" type="text"
+                                       placeholder="Daniel Hecker">
+                            </div>
+                            <div class="wrapper-inf__inp">
+                                <label class="payment-inf_label" for="number">Card Number</label>
+                                <input class="input-text payment-inf_field" id="number" type="text"
+                                       placeholder="4121 4411 1414 9754">
+                            </div>
+                            <div class="wrapper-inf__inp wrapper-inf__inp_mini">
+                                <label class="payment-inf_label" for="date">Card Number</label>
+                                <input class="input-text payment-inf_field" id="date" type="text"
+                                       placeholder="MM / DD">
+                            </div>
+                            <div class="wrapper-inf__inp wrapper-inf__inp_mini wrapper-inf__inp_right">
+                                <label class="payment-inf_label" for="cvv">CVV</label>
+                                <input class="input-text payment-inf_field" id="cvv" type="text"
+                                       placeholder="eg. 201">
+                            </div>
+                        </form>
+                        <input data-radio-payment type="radio" id="contactChoice2"
+                               name="contact" value="phone" class="input-radio input-radio_paypal">
+                        <label for="contactChoice2">Paypal</label>
+                        <form>
+                            <div class="wrapper-inf__inp wrapper-inf__inp_padding-bottom">
+                                <label class="payment-inf_label" for="email">Email Address</label>
+                                <input class="input-text payment-inf_field" id="email" type="text"
+                                       placeholder="abc@xyz.com">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="back-or-run"> <!-- xD -->
+                    <a href="#checkout" data-back-to-shipping class="btn btn_white btn_back ">Back</a>
+                    <a href="#congratulations" class="btn btn_green btn_pay" data-button-pay>Pay $254.84</a>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</template>
+<template id="congratulations-page">
+        <section class="shop shop_center">
+            <section class="cart">
+                <section data-last-block class="congratulations ">
+                    <article class="congratulations__content">
+                        <h1 class="congratulations__title">Congratulations</h1>
+                        <p class="congratulations__text">Order Placed Successfully!</p>
+                        <a href="#" data-back-to-shopping class="btn btn_green btn_last-page">BACK TO SHOPPING</a>
+                    </article>
+                </section>
+            </section>
+        </section>
+</template>
+</body>
+<script type="module" src="js/script.js"></script>
 </html>

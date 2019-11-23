@@ -6,9 +6,10 @@ export class Cart {
     }
 
     addItem(item) {
-        this.value += parseInt(Number(item.price));
+        this.value += Number(item.price);
         this.updateCartIcon(this.value);
         this.changeCartContents(item);
+        this.saveProducts(this.arrayProducts)
     }
 
     updateCartIcon(value) {
@@ -42,17 +43,15 @@ export class Cart {
     }
 
     renderCartTemplate() {
-        let homeDecor = document.querySelector('[data-home-decor-section]'),
-            homePage = document.querySelector('[data-home-page]');
-        if (homeDecor && homePage) {
-            homeDecor.classList.add('hidden');
-            homePage.classList.add('hidden');
-        }
-
+        let location = document.querySelector('.content');
+        let otherSection = location.querySelectorAll('section')[0];
         let templateCartPage = document.querySelector('#cart-page');
         let clone = document.importNode(templateCartPage.content, true);
-        document.querySelector('.content').innerHTML = '';
-        document.querySelector('.content').appendChild(clone);
+        if (otherSection) {
+            location.replaceChild(clone, otherSection);
+        }else {
+            location.appendChild(clone);
+        }
         this.renderProducts();
         this.totalCount();
         this.productEvents();
@@ -75,7 +74,7 @@ export class Cart {
                 name.textContent = product.name;
                 price.textContent = product.price;
                 quantity.setAttribute('placeholder', product.quantity);
-                sum.textContent = (product.price * product.quantity);
+                sum.textContent = product.price * product.quantity;
                 let clone = document.importNode(templateCartItem.content, true);
                 document.querySelector('tbody').appendChild(clone)
             })
@@ -94,6 +93,9 @@ export class Cart {
 
     clickOnTheCart(e) {
         // console.log(e.target.dataset.reset)
+        if (e.target.type === 'text') {
+            e.target.addEventListener('input', cartInstance.costCalculation)
+        }
         if (e.target.dataset.reset) {
             let id = e.target.closest('.cart__tr').dataset.id;
             cartInstance.resetItem(id);
@@ -102,8 +104,56 @@ export class Cart {
     }
 
     resetItem(id) {
-        console.log(id)
+        let deletedItem;
+        let filtered = this.arrayProducts.filter(item => {
+            if (parseInt(item.id) !== parseInt(id)) {
+                return item;
+            } else {
+                deletedItem = item;
+            }
+        });
+        this.value -= (deletedItem.price * deletedItem.quantity);
+        this.arrayProducts = filtered;
+        this.saveProducts(this.arrayProducts);
+        this.totalCount();
+        this.updateCartIcon(this.value)
     }
 
+    saveProducts(products) {
+        localStorage.setItem('products' ,JSON.stringify(products));
+        localStorage.setItem('value', JSON.stringify(this.value));
+    }
+
+    loadCart() {
+        if (!this.arrayProducts.length) {
+            if (localStorage.length) {
+                this.arrayProducts = JSON.parse(localStorage.getItem('products'));
+                this.value = JSON.parse(localStorage.getItem('value'));
+                this.updateCartIcon(this.value)
+            }
+        }
+    }
+
+    costCalculation() {
+        if (Number(this.value)){
+            let id = this.closest('.cart__tr').dataset.id;
+            cartInstance.arrayProducts.forEach(product => {
+                if (product.id == id) {
+                    product.quantity = this.value;
+                    let totalAmountProduct = this.value * product.price;
+                    // cartInstance.value += totalAmount;
+                    let totalAmount = 0;
+                    cartInstance.arrayProducts.forEach(product => {
+                        totalAmount += (product.price * parseInt(product.quantity))
+                    });
+                    cartInstance.value = totalAmount;
+                    this.closest('tr').querySelector('.product__sum').textContent = totalAmountProduct;
+                    cartInstance.saveProducts(cartInstance.arrayProducts);
+                    cartInstance.totalCount();
+                    cartInstance.updateCartIcon(cartInstance.value)
+                }
+            })
+        }
+    }
 
 }

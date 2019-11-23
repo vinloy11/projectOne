@@ -84,15 +84,18 @@
 //     // generateRandomElements(arr);
 // }, 500)
 
-import { dich } from "./dich.js";
-import { generateRandomElements } from "./randomElements.js";
-import { toggleMenu } from "./toggleMenu.js";
-import { getData } from "./getData.js";
-import { goToCategory } from "./goToCategory.js";
+// import { dich } from "./dich.js";
+// import { generateRandomElements } from "./randomElements.js";
+// import { toggleMenu } from "./toggleMenu.js";
+// import { getData } from "./getData.js";
+// import { goToCategory } from "./goToCategory.js";
 import { Cart } from "./cart.js";
 import { Router } from "./Router.js";
+import { RenderProducts } from "./RenderProducts.js";
+
 window.route = new Router();
 window.cartInstance = new Cart(0);
+window.getProducts = new RenderProducts();
 
 route.parseUrl();
 window.addEventListener("hashchange", function() {

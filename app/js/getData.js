@@ -1,13 +1,22 @@
-export function getData(url, method, callback) {
-    let data;
-    const request = new XMLHttpRequest();
-    request.open(method, url);
+export function getData(url) {
+  return new Promise(function(resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
 
-    request.addEventListener('load', function(data) {
-        if (request.responseText) {
-            data = JSON.parse(request.responseText)
-            callback(data)
-        }
-    });
-    request.send()
+    xhr.onload = function() {
+      if (this.status == 200) {
+        resolve(JSON.parse(this.response));
+      } else {
+        var error = new Error(this.statusText);
+        error.code = this.status;
+        reject(error);
+      }
+    };
+
+    xhr.onerror = function() {
+      reject(new Error("json error"));
+    };
+
+    xhr.send();
+  });
 }

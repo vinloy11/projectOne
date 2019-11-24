@@ -305,6 +305,7 @@
         </section>
     </div>
 </section>
+
 <template id="li-item">
     <li data-go-to-category class="li-inf__category">
         <a href="#">${item}</a>
@@ -510,7 +511,7 @@
                 </form>
                 <section class="back-or-run"> <!-- xD -->
                     <a href="#cart" data-back-to-cart class="btn btn_white btn_back">Back</a>
-                    <a href="#payment" class="btn btn_green btn_pay" data-next-page>Next</a>
+                    <a href="#payment" class="btn btn_green " data-next-page>Next</a>
                 </section>
             </section>
         </section>
@@ -538,87 +539,7 @@
                             <td class="cart__td cart__td_end">$5.00</td>
                         </tr>
                         </tfoot>
-                        <tbody>
-                        <tr class="cart__tr cart__tr_mini">
-                            <td width="53%" class="cart__td cart__td_mini">
-                                <article class="product">
-                                    <div class="product__block-for-image block-for-image_mini">
-                                        <img class="product__image product__image_mini" src="img/product.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="product__details">
-                                            <span class="product__name product__name_mini">
-                                                Product Name Here
-                                            </span>
-                                    </div>
-                                </article>
-                            </td>
-                            <td class="cart__td cart__td_end">
-                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
-                                       type="text">
-                            </td>
-                            <td class="cart__td cart__td_end">$28.99</td>
-                        </tr>
-                        <tr class="cart__tr cart__tr_mini">
-                            <td width="53%" class="cart__td cart__td_mini">
-                                <article class="product">
-                                    <div class="product__block-for-image block-for-image_mini">
-                                        <img class="product__image product__image_mini" src="img/bitmap3.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="product__details">
-                                            <span class="product__name product__name_mini">
-                                                Product Name Here
-                                            </span>
-                                    </div>
-                                </article>
-                            </td>
-                            <td class="cart__td cart__td_end">
-                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
-                                       type="text">
-                            </td>
-                            <td class="cart__td cart__td_end">$28.99</td>
-                        </tr>
-                        <tr class="cart__tr cart__tr_mini">
-                            <td width="53%" class="cart__td cart__td_mini">
-                                <article class="product">
-                                    <div class="product__block-for-image block-for-image_mini">
-                                        <img class="product__image product__image_mini" src="img/bitmap2.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="product__details">
-                                            <span class="product__name product__name_mini">
-                                                Product Name Here
-                                            </span>
-                                    </div>
-                                </article>
-                            </td>
-                            <td class="cart__td cart__td_end">
-                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
-                                       type="text">
-                            </td>
-                            <td class="cart__td cart__td_end">$28.99</td>
-                        </tr>
-                        <tr class="cart__tr cart__tr_mini">
-                            <td width="53%" class="cart__td cart__td_mini">
-                                <article class="product">
-                                    <div class="product__block-for-image block-for-image_mini">
-                                        <img class="product__image product__image_mini" src="img/product.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="product__details">
-                                            <span class="product__name product__name_mini">
-                                                Product Name Here
-                                            </span>
-                                    </div>
-                                </article>
-                            </td>
-                            <td class="cart__td cart__td_end">
-                                <input placeholder="1" class="input-text input-text_small input-text_smaller "
-                                       type="text">
-                            </td>
-                            <td class="cart__td cart__td_end">$28.99</td>
-                        </tr>
+                        <tbody class="cart__tbody">
                         </tbody>
                     </table>
                 </div>
@@ -683,6 +604,40 @@
             </section>
         </section>
 </template>
+<template id="small-cart-item">
+    <tr class="cart__tr cart__tr_mini">
+        <td width="53%" class="cart__td cart__td_mini">
+            <article class="product">
+                <div class="product__block-for-image block-for-image_mini">
+                    <img class="product__image product__image_mini" src=""
+                         alt="">
+                </div>
+                <div class="product__details">
+                                            <span class="product__name product__name_mini">
+
+                                            </span>
+                </div>
+            </article>
+        </td>
+        <td class="cart__td cart__td_end">
+            <input placeholder="1" class="input-text input-text_small input-text_smaller "
+                   type="text">
+        </td>
+        <td class="product__sum cart__td cart__td_end">$28.99</td>
+    </tr>
+</template>
+<div data-loader class="loader hidden" style="width: 100%; height: 100vw; background: #cccccc;opacity: 0.7; position: absolute; top: 0; left: 0; overflow: hidden">
+    <div id="squaresWaveG">
+        <div id="squaresWaveG_1" class="squaresWaveG"></div>
+        <div id="squaresWaveG_2" class="squaresWaveG"></div>
+        <div id="squaresWaveG_3" class="squaresWaveG"></div>
+        <div id="squaresWaveG_4" class="squaresWaveG"></div>
+        <div id="squaresWaveG_5" class="squaresWaveG"></div>
+        <div id="squaresWaveG_6" class="squaresWaveG"></div>
+        <div id="squaresWaveG_7" class="squaresWaveG"></div>
+        <div id="squaresWaveG_8" class="squaresWaveG"></div>
+    </div>
+</div>
 </body>
 <script type="module" src="js/script.js"></script>
 </html>

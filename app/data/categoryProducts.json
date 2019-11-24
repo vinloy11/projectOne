@@ -1,1 +1,396 @@
-[{"category":"pots","products":[{"src":"assets/img/main3.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"2954.75","id":11},{"src":"assets/img/layer3.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"254.75","id":12},{"src":"assets/img/main.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"293.75","id":13},{"src":"assets/img/main4.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"1935","id":14},{"src":"assets/img/main5.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"43354.75","id":15},{"src":"assets/img/main1.jpg","name":"Рандомный pots","supplier":"Supplier’s Name Here","price":"2135","id":16}]},{"category":"kitchen","products":[{"src":"assets/img/main3.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"954.75","id":17},{"src":"assets/img/layer3.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"3275","id":18},{"src":"assets/img/main.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"294.75","id":19},{"src":"assets/img/main4.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"245","id":20},{"src":"assets/img/main5.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"2943.4","id":21},{"src":"assets/img/main1.jpg","name":"Рандомный kitchen","supplier":"Supplier’s Name Here","price":"56.75","id":22}]},{"category":"beds","products":[{"src":"assets/img/main1.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"225","id":23},{"src":"assets/img/main2.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"54.75","id":24},{"src":"assets/img/main3.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"29","id":25},{"src":"assets/img/main4.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"13","id":26},{"src":"assets/img/main5.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"956","id":27},{"src":"assets/img/main7.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"994","id":28},{"src":"assets/img/layer1.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"432","id":29},{"src":"assets/img/main2.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"293.75","id":30},{"src":"assets/img/layer3.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"29354.75","id":31},{"src":"assets/img/main5.jpg","name":"Рандомный beds","supplier":"Supplier’s Name Here","price":"9354.75","id":32}]},{"category":"pans","products":[{"src":"assets/img/main1.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"2354.75","id":33},{"src":"assets/img/main2.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"75","id":34},{"src":"assets/img/main3.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"500","id":35},{"src":"assets/img/main4.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"722","id":36},{"src":"assets/img/main5.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"29354.75","id":37},{"src":"assets/img/main7.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"705","id":38},{"src":"assets/img/layer1.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"932","id":39},{"src":"assets/img/main2.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"275","id":40},{"src":"assets/img/layer3.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"29275","id":41},{"src":"assets/img/main5.jpg","name":"Рандомный pans","supplier":"Supplier’s Name Here","price":"24.75","id":42}]},{"category":"pressure","products":[{"src":"assets/img/main1.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"29554.54","id":43},{"src":"assets/img/main2.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"654.75","id":44},{"src":"assets/img/main3.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"293.75","id":45},{"src":"assets/img/main4.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"9354.75","id":46},{"src":"assets/img/main5.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"54.75","id":47},{"src":"assets/img/main7.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"4.75","id":48},{"src":"assets/img/layer1.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"354.75","id":49},{"src":"assets/img/main2.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"29354.75","id":50},{"src":"assets/img/layer3.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"0.75","id":51},{"src":"assets/img/main5.jpg","name":"Рандомный pressure","supplier":"Supplier’s Name Here","price":"43.75","id":52}]},{"category":"cookers","products":[{"src":"assets/img/main1.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"54.75","id":53},{"src":"assets/img/main2.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"354.75","id":54},{"src":"assets/img/main3.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"9354.75","id":55},{"src":"assets/img/main4.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"154.75","id":56},{"src":"assets/img/main5.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"45.75","id":57},{"src":"assets/img/main7.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"54.75","id":58},{"src":"assets/img/layer1.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"2254.75","id":59},{"src":"assets/img/main2.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"4354.75","id":60},{"src":"assets/img/layer3.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"19354.75","id":61},{"src":"assets/img/main5.jpg","name":"Рандомный cookers","supplier":"Supplier’s Name Here","price":"4354.75","id":62}]}]
+[
+  {
+    "category": "pots",
+    "products": [
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "2954.75",
+        "id": 11
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "344.75",
+        "id": 12
+      },
+      {
+        "src": "assets/img/main.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "293.75",
+        "id": 13
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "1935",
+        "id": 14
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "43354.75",
+        "id": 15
+      },
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный pots",
+        "supplier": "Supplier’s Name Here",
+        "price": "2135",
+        "id": 16
+      }
+    ]
+  },
+  {
+    "category": "kitchen",
+    "products": [
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "954.75",
+        "id": 17
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "3275",
+        "id": 18
+      },
+      {
+        "src": "assets/img/main.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "294.75",
+        "id": 19
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "245",
+        "id": 20
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "2943.4",
+        "id": 21
+      },
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный kitchen",
+        "supplier": "Supplier’s Name Here",
+        "price": "56.75",
+        "id": 22
+      }
+    ]
+  },
+  {
+    "category": "beds",
+    "products": [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "225",
+        "id": 23
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "54.75",
+        "id": 24
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "29",
+        "id": 25
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "13",
+        "id": 26
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "956",
+        "id": 27
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "994",
+        "id": 28
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "432",
+        "id": 29
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "293.75",
+        "id": 30
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "29354.75",
+        "id": 31
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный beds",
+        "supplier": "Supplier’s Name Here",
+        "price": "9354.75",
+        "id": 32
+      }
+    ]
+  },
+  {
+    "category": "pans",
+    "products": [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "2354.75",
+        "id": 33
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "75",
+        "id": 34
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "500",
+        "id": 35
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "722",
+        "id": 36
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "29354.75",
+        "id": 37
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "705",
+        "id": 38
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "932",
+        "id": 39
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "275",
+        "id": 40
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "29275",
+        "id": 41
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pans",
+        "supplier": "Supplier’s Name Here",
+        "price": "24.75",
+        "id": 42
+      }
+    ]
+  },
+  {
+    "category": "pressure",
+    "products": [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "29554.54",
+        "id": 43
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "654.75",
+        "id": 44
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "300.75",
+        "id": 45
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "9354.75",
+        "id": 46
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "54.75",
+        "id": 47
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "4.75",
+        "id": 48
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "354.75",
+        "id": 49
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "29354.75",
+        "id": 50
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "0.75",
+        "id": 51
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный pressure",
+        "supplier": "Supplier’s Name Here",
+        "price": "43.75",
+        "id": 52
+      }
+    ]
+  },
+  {
+    "category": "cookers",
+    "products": [
+      {
+        "src": "assets/img/main1.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "54.75",
+        "id": 53
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "354.75",
+        "id": 54
+      },
+      {
+        "src": "assets/img/main3.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "9354.75",
+        "id": 55
+      },
+      {
+        "src": "assets/img/main4.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "154.75",
+        "id": 56
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "45.75",
+        "id": 57
+      },
+      {
+        "src": "assets/img/main7.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "54.75",
+        "id": 58
+      },
+      {
+        "src": "assets/img/layer1.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "2254.75",
+        "id": 59
+      },
+      {
+        "src": "assets/img/main2.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "4354.75",
+        "id": 60
+      },
+      {
+        "src": "assets/img/layer3.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "19354.75",
+        "id": 61
+      },
+      {
+        "src": "assets/img/main5.jpg",
+        "name": "Рандомный cookers",
+        "supplier": "Supplier’s Name Here",
+        "price": "4354.75",
+        "id": 62
+      }
+    ]
+  }
+]

@@ -1,8 +1,11 @@
+import {getData} from "./getData.js";
+
 export class Cart {
     constructor(value) {
         this.value = value;
         this.arrayProducts = [];
         this.mainArrayProducts = [];
+        this.allProducts = [];
     }
 
     addItem(item) {
@@ -22,8 +25,6 @@ export class Cart {
     }
 
     changeCartContents(product) {
-        // console.log(product);
-        // let i = 0;
         if (this.arrayProducts.length !== 0) {
             let i = true;
             this.arrayProducts.forEach((key) => {
@@ -42,48 +43,72 @@ export class Cart {
         }
     }
 
+    checkedJsonProducts() {
+        return getData('http://localhost:3000/data/allItems.json').then(products => {
+            this.arrayProducts.forEach(oldProduct => {
+                products.forEach(newProduct => {
+                    if (newProduct.id == oldProduct.id) {
+                        oldProduct.src = newProduct.src;
+                        oldProduct.name = newProduct.name;
+                        oldProduct.price = newProduct.price
+                    }
+
+                })
+            })
+        })
+    }
+
     renderCartTemplate() {
-        let location = document.querySelector('.content');
-        let otherSection = location.querySelectorAll('section')[0];
-        let templateCartPage = document.querySelector('#cart-page');
-        let clone = document.importNode(templateCartPage.content, true);
-        if (otherSection) {
-            location.replaceChild(clone, otherSection);
-        }else {
-            location.appendChild(clone);
-        }
-        this.renderProducts();
-        this.totalCount();
-        this.productEvents();
+        this.checkedJsonProducts().then(() => {
+            let location = document.querySelector('.content');
+            let otherSection = location.querySelectorAll('section')[0];
+            let templateCartPage = document.querySelector('#cart-page');
+            let clone = document.importNode(templateCartPage.content, true);
+            if (otherSection) {
+                location.replaceChild(clone, otherSection);
+            } else {
+                location.appendChild(clone);
+            }
+            let newValue = 0;
+            this.arrayProducts.forEach(product => {
+                let val = (Number(product.price) * Number(product.quantity))
+                newValue += val;
+            });
+            this.value = Number(newValue)
+            this.renderProducts();
+            this.totalCount();
+            this.productEvents();
+        })
+
     }
 
     renderProducts() {
         if (this.arrayProducts.length > 0) {
             this.arrayProducts.forEach((product) => {
-
                 let templateCartItem = document.querySelector('#cart-item');
-                let content = templateCartItem.content;
-                let productWrapper = content.querySelector('.cart__tr');
-                let image = content.querySelector('.product__image');
-                let name = content.querySelector('.product__name');
-                let price = content.querySelector('.product__price');
-                let quantity = content.querySelector('.input-text');
-                let sum = content.querySelector('.product__sum');
-                productWrapper.setAttribute('data-id', product.id);
-                image.setAttribute('src', product.src);
-                name.textContent = product.name;
-                price.textContent = product.price;
-                quantity.setAttribute('placeholder', product.quantity);
-                sum.textContent = product.price * product.quantity;
-                let clone = document.importNode(templateCartItem.content, true);
-                document.querySelector('tbody').appendChild(clone)
+                this.setDataProduct(product, templateCartItem)
             })
         }
     }
 
     totalCount() {
-        document.querySelector('[data-subtotal]').innerHTML = '$' + this.value;
-        document.querySelector('[data-total-amount]').innerHTML = '$' + (this.value + 5)
+        let bigCartButton = document.querySelector('[data-subtotal]');
+        let payButton = document.querySelector('.btn_pay');
+        if (bigCartButton) {
+            document.querySelector('[data-subtotal]').innerHTML = '$' + this.value;
+            document.querySelector('[data-total-amount]').innerHTML = '$' + (this.value + 5);
+            let btnCheckout = document.querySelector('.btn_process-to-checkout');
+            if(this.value === 0) {
+                btnCheckout.setAttribute('href', '#cart');
+                btnCheckout.classList.add('disabled')
+            } else {
+                btnCheckout.setAttribute('href', '#checkout');
+                btnCheckout.classList.remove('disabled')
+            }
+        } else if (payButton){
+            payButton.textContent = `Pay $${this.value + 5}`
+        }
+
     }
 
     productEvents() {
@@ -92,7 +117,6 @@ export class Cart {
     }
 
     clickOnTheCart(e) {
-        // console.log(e.target.dataset.reset)
         if (e.target.type === 'text') {
             e.target.addEventListener('input', cartInstance.costCalculation)
         }
@@ -120,7 +144,7 @@ export class Cart {
     }
 
     saveProducts(products) {
-        localStorage.setItem('products' ,JSON.stringify(products));
+        localStorage.setItem('products', JSON.stringify(products));
         localStorage.setItem('value', JSON.stringify(this.value));
     }
 
@@ -135,13 +159,12 @@ export class Cart {
     }
 
     costCalculation() {
-        if (Number(this.value)){
+        if (Number(this.value)) {
             let id = this.closest('.cart__tr').dataset.id;
             cartInstance.arrayProducts.forEach(product => {
                 if (product.id == id) {
                     product.quantity = this.value;
                     let totalAmountProduct = this.value * product.price;
-                    // cartInstance.value += totalAmount;
                     let totalAmount = 0;
                     cartInstance.arrayProducts.forEach(product => {
                         totalAmount += (product.price * parseInt(product.quantity))
@@ -154,6 +177,53 @@ export class Cart {
                 }
             })
         }
+    }
+
+    renderSmallCart() {
+        this.checkedJsonProducts().then(() => {
+            let location = document.querySelector('tbody');
+            let otherTr = location.querySelectorAll('tr');
+            otherTr.forEach(tr => {
+                tr.remove()
+            });
+            this.arrayProducts.forEach(product => {
+                let templateCartItem = document.querySelector('#small-cart-item');
+                this.setDataProduct(product, templateCartItem)
+                this.totalCount();
+                this.productEvents();
+            })
+        })
+    }
+
+    setDataProduct(product, templateCartItem) {
+        let content = templateCartItem.content;
+        let productWrapper = content.querySelector('.cart__tr');
+        let image = content.querySelector('.product__image');
+        let name = content.querySelector('.product__name');
+        let price = content.querySelector('.product__price');
+        let quantity = content.querySelector('.input-text');
+        let sum = content.querySelector('.product__sum');
+        productWrapper.setAttribute('data-id', product.id);
+        image.setAttribute('src', product.src);
+        name.textContent = product.name;
+        if (price) {
+            price.textContent = product.price;
+        }
+        quantity.setAttribute('placeholder', product.quantity);
+        sum.textContent = product.price * product.quantity;
+        let clone = document.importNode(templateCartItem.content, true);
+        document.querySelector('tbody').appendChild(clone)
+    }
+
+    getCartProduct() {
+        return this.arrayProducts.length;
+    }
+
+    clearCart() {
+        localStorage.clear();
+        this.arrayProducts = [];
+        this.value = 0;
+        this.updateCartIcon(this.value)
     }
 
 }
